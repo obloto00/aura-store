@@ -1,17 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AuraStore | Discover Your Perfect Aura Fit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aura Store</title>
+  <link rel="icon" href="images/aura-logo.png">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    
-<h1>AuraStore</h1>
 
+  <header class="top">
+    <!-- MENU button (left) -->
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuPanel">
+      <span class="burger"><i></i><i></i></span>
+      <span>MENU</span>
+    </button>
 
+    <!-- Search (right). Pressing Enter goes to the Explore page. -->
+    <form class="search" action="html/explore.html" method="get" role="search">
+      <input type="search" name="q" placeholder="Search fits, aura..." aria-label="Search the store">
+      <button type="submit">SEARCH</button>
+    </form>
 
+    <!-- The big menu that drops down -->
+    <nav class="panel" id="menuPanel" aria-label="Main menu">
+      <div class="col">
+        <h2>Explore</h2>
+        <a href="html/explore.html?for=women">Women</a>
+        <a href="html/explore.html?for=men">Men</a>
+      </div>
 
+      <div class="col">
+        <h2>About</h2>
+        <a href="html/about.html#how-to-use">How to use</a>
+        <a href="html/about.html#functions">Functions and details</a>
+      </div>
 
+      <div class="col">
+        <h2>Try-on</h2>
+        <a href="html/try-on.html">Dress the mannequin</a>
+      </div>
+
+      <div class="col products">
+        <h2>Products</h2>
+        <div class="two">
+          <div>
+            <a href="html/explore.html?cat=clothes">Clothes</a>
+            <a href="html/explore.html?cat=accessories">Accessories</a>
+            <a href="html/explore.html?cat=headwear">Headwear &amp; Hair Accessories</a>
+            <a href="html/explore.html?cat=neckwear">Neckwear &amp; Wraps</a>
+            <a href="html/explore.html?cat=tech">Tech &amp; Functional Wearables</a>
+          </div>
+          <div>
+            <a href="html/explore.html?cat=footwear">Footwear</a>
+            <a href="html/explore.html?cat=eyewear">Eyewear</a>
+            <a href="html/explore.html?cat=bags">Bags &amp; Carriers</a>
+            <a href="html/explore.html?cat=waist">Waist &amp; Torso</a>
+            <a href="html/explore.html?cat=misc">Miscellaneous / Niche</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h2>Contact</h2>
+        <a href="html/contact.html">Get in touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- The 3D logo in the middle. Everything else is empty. -->
+  <main class="stage">
+    <div class="float">
+      <img class="logo3d" src="images/aura-logo.png" alt="Aura Store logo" draggable="false">
+    </div>
+    <div class="ground"></div>
+  </main>
+
+  <script src="javascript/home.js"></script>
 </body>
 </html>
